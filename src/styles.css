@@ -43,3 +43,30 @@ a {
 a:hover {
   cursor: "pointer";
 }
+
+@media (max-width: 992px) {
+  a {
+    width: 35%;
+  }
+}
+
+@media (max-width: 742px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  a {
+    width: 35%;
+  }
+}
+
+@media (max-width: 597px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  a {
+    width: 35%;
+    padding: 0.5rem 4rem;
+    margin-top: 3%;
+    font-size: 0.8rem;
+  }
+}
