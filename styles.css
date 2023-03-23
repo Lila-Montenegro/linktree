@@ -1,15 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=League+Spartan:wght@800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
 
 .main-container {
   text-align: center;
-  padding-top: 7%;
+  padding-top: 5%;
   width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(#2e3192, #1bffff);
+  height: 120vh;
+  background-image: linear-gradient(#5c5857, #161616);
 }
 
 img {
-  width: 10%;
+  max-width: 10rem;
   border-radius: 50%;
 
   display: block;
@@ -17,56 +22,70 @@ img {
 }
 
 h1 {
-  font-family: "inter";
-  display: block;
+  padding-top: 1.5%;
+  font-family: "League Spartan", sans-serif;
   color: white;
+  font-size: 1.8rem;
 }
 
 a {
-  font-family: "montserrat";
+  font-family: "inter", sans-serif;
   color: white;
   font-size: 1rem;
-  font-weight: 600;
   text-decoration: none;
 
   display: block;
   margin: auto;
 
-  margin-top: 2%;
-  padding: 1rem 8rem;
-  width: 40%;
+  margin-top: 2rem;
+  padding: 1rem 6rem;
+  width: 25rem;
 
-  background-color: transparent;
+  background-color: rgba(16, 15, 15, 0.195);
+  box-shadow: 6px 4px 4px black;
   border: 1px solid white;
 }
 
 a:hover {
   cursor: "pointer";
+  box-shadow: 10px 6px 6px black;
 }
 
-@media (max-width: 992px) {
-  a {
-    width: 35%;
-  }
-}
-
-@media (max-width: 742px) {
+@media (max-width: 962px) {
   h1 {
-    font-size: 1.5rem;
+    padding-top: 3%;
   }
+}
+
+@media (max-width: 789px) {
   a {
+    padding: 1rem 4rem;
     width: 35%;
   }
 }
 
-@media (max-width: 597px) {
-  h1 {
-    font-size: 1.2rem;
-  }
+@media (max-width: 676px) {
   a {
-    width: 35%;
-    padding: 0.5rem 4rem;
-    margin-top: 3%;
-    font-size: 0.8rem;
+    padding: 1rem 1.5rem;
+    width: 50%;
+  }
+}
+
+@media (max-width: 473px) {
+  h1 {
+    padding-top: 4%;
+    font-size: 1.6rem;
+    margin-bottom: 5%;
+  }
+
+  img {
+    width: 8.5rem;
+  }
+
+  a {
+    margin-bottom: 5%;
+    padding: 0.5rem 0.5rem;
+    width: 60%;
+    font-size: 0.7rem;
   }
 }
